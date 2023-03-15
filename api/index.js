@@ -10,7 +10,7 @@ app.use((req, res, next) => {
 });
 
 app.get('/reverso', async (req, res) => {
-  res.json('hello')
+  res.json('hello world')
 });
 
 app.get('/reverso/:word', async (req, res) => {
