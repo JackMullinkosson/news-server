@@ -22,11 +22,15 @@ app.get('/reverso/:word', async (req, res) => {
       'english',
       language
     );
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
     res.json(contextResponse);
   } catch (err) {
     res.status(500).json({ type: 'error', message: err.message });
   }
 });
+
 
 const PORT = 5000;
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
