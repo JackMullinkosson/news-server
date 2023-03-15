@@ -9,6 +9,10 @@ app.use((req, res, next) => {
   next();
 });
 
+app.get('/reverso', async (req, res) => {
+  res.json('hello')
+});
+
 app.get('/reverso/:word', async (req, res) => {
   try {
     const { language } = req.query;
