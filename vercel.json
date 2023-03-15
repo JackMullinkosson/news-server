@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "routes": [
+    { "src": "/reverso", "dest": "/index.js" },
+    { "src": "/reverso/:word", "dest": "/index.js" }
+  ]
+}
