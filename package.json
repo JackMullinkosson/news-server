@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@extractus/article-extractor": "^7.2.11",
+    "article-parser": "^7.2.6-rc1",
     "express": "^4.18.2",
     "reverso-api": "^2.22.3"
   }
