@@ -6,10 +6,8 @@
     {
       "src": "/reverso/:word",
       "dest": "/index.js",
-      "methods": ["GET"],
-      "query": {
-        "language": "*"
-      }
-    }
+      "methods": ["GET"]
+    },
+    { "src": "/reverso/:word/*", "dest": "/index.js", "methods": ["GET"] }
   ]
 }
